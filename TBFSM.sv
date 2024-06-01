@@ -62,6 +62,8 @@ module TBFSM();
     #10 TBX = 1;
         TBY = 1;
         
+
+        
         ////////
         
     #10 TBX = 0;
@@ -87,6 +89,32 @@ module TBFSM();
     
     #10 TBX = 0;
         TBY = 1;
+        
+               ////////
+        
+    #10 TBX = 0;
+        TBY = 0;
+    
+    #10 TBX = 0;
+        TBY = 0;
+        
+    #10 TBX = 0;
+        TBY = 0;
+    
+    #10 TBX = 0;
+        TBY = 0;
+        
+    #10 TBX = 0;
+        TBY = 0;
+    
+    #10 TBX = 0;
+        TBY = 0;
+        
+    #10 TBX = 0;
+        TBY = 0;
+    
+    #10 TBX = 1;
+        TBY = 0;
         
         
         
