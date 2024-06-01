@@ -146,7 +146,9 @@ module FSM(
             
             Z = V;
             
-            //#1000
+            if (Z) begin #800 V = V; end
+            
+            else begin V = V; end
             
             NS = A;
             
