@@ -1,12 +1,12 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: Cal Poly 
-// Engineer: Brycen? Asha? Nick?
+// Company: Cal Poly CPE
+// Engineer: Brycen Jermagian
 // 
 // Create Date: 05/30/2024 02:31:44 PM
 // Design Name: 
 // Module Name: FSM
-// Project Name: PBP
+// Project Name: Precision Button Press
 // Target Devices: 
 // Tool Versions: 
 // Description: 
@@ -37,8 +37,7 @@ module FSM(
         
     end
 
- //States A - E, Z = 0; if: X == Y move on to the next state, else: go back to A
- //States F - H, Z = 0; if: X == Y move on to the next state, else: go back to B
+ //States A - H, Z = 0; if: X == Y move on to the next state, else: go back to A
  //State FIN, Z = 1; Add in 1000ns delay, Go back to A
  //Default: A
  
@@ -114,7 +113,7 @@ module FSM(
             
             if (X == Y) NS = H;
             
-            else NS = B;
+            else NS = A;
             
             end    
             
@@ -124,7 +123,7 @@ module FSM(
             
             if (X == Y) NS = FIN;
             
-            else NS = B;
+            else NS = A;
             
             end
             
