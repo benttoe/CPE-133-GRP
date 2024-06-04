@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: Cal Poly 
-// Engineer: Brycen? Asha?
+// Engineer: Brycen? Asha? Nick?
 // 
 // Create Date: 05/30/2024 02:31:44 PM
 // Design Name: 
