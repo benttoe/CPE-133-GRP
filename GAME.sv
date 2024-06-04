@@ -1,12 +1,12 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
-// Engineer: 
+// Engineer: Asha Smith 
 // 
 // Create Date: 05/21/2024 01:34:25 PM
 // Design Name: 
-// Module Name: GAME
-// Project Name: 
+// Module Name: GAME (High Level Module)
+// Project Name: Precision Button Press
 // Target Devices: 
 // Tool Versions: 
 // Description: 
