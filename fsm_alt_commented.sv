@@ -40,6 +40,7 @@ module FSM(
 //State A: If X == Y, V = 1; Else: V = 0; Go to the next state regardless
 //States B - H: If X == Y && V, V = 1; Else: V = 0; Go to the next state regardless
 //State FINl: Z = V; If: Z = 1, Delay: 800 ns, V = V; Else: V = v; Go back to A
+//Default: A
     
     always_comb begin
         
