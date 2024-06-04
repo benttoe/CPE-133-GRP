@@ -97,7 +97,7 @@ module FSM(
             
             Z = 0;
             
-            if (X) NS = G;
+                if (X == Y) NS = G;
             
             else NS = B;
             
