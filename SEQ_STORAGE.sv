@@ -1,12 +1,11 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
+// Company: Cal Poly CPE 133
+// Engineer: Nick Grant
 // 
 // Create Date: 06/03/2024 01:55:40 PM
-// Design Name: 
 // Module Name: SEQ_STORAGE
-// Project Name: 
+// Project Name: Precision Button Press
 // Target Devices: 
 // Tool Versions: 
 // Description: 
