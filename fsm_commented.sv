@@ -37,8 +37,11 @@ module FSM(
         
     end
 
- //States A-H, Z = 0; if: X == Y move on to the next state, else: go back to A
+ //States A - E, Z = 0; if: X == Y move on to the next state, else: go back to A
+ //States F - H, Z = 0; if: X == Y move on to the next state, else: go back to B
  //State FIN, Z = 1; Add in 1000ns delay, Go back to A
+ //Default: A
+ 
     always_comb begin
         
         Z = 0;
@@ -99,7 +102,7 @@ module FSM(
             
             Z = 0;
             
-            if (X) NS = G;
+            if (X == Y) NS = G;
             
             else NS = B;
             
@@ -129,7 +132,7 @@ module FSM(
             
             Z = 1;
             
-            #1000  //Add delay
+            #1000  
             
             NS = A;
             
