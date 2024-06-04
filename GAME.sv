@@ -39,7 +39,7 @@ module GAME(
     SEQ_STORAGE SQS (.BTN(BT_0), .LEDS(t2), .CLK(t1), .SEQ(t4));
     seq_dvr DVR2 (.CLK(t1), .SWITCHES(t4), .X(t5));
     FSM SEQ_DTR (.CLK(t1), .X(t3), .Y(t5), .Z(t6));
-    Accumulator ACC (.clk(CLK), .LD(t6), .CLR(RST), .Q(t7));
+    Accumulator ACC (.clk(CLK), .LD({7'b0,t6}), .CLR(RST), .Q(t7));
     U_SSEG SSEG (.clk(CLK), .cnt1({{6{1'b0}}, t7}), .ssegs(SEG), .disp_en(AN));
     assign LED = ~t2;
     
