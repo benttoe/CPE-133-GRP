@@ -1,12 +1,12 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: Cal Poly
-// Engineer: Brycen? Asha?
+// Company: Cal Poly CPE
+// Engineer: Brycen Jermagian
 // 
 // Create Date: 05/30/2024 02:31:44 PM
 // Design Name: 
 // Module Name: FSM
-// Project Name: PBP
+// Project Name: Precision Button Press
 // Target Devices: 
 // Tool Versions: 
 // Description: 
