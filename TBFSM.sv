@@ -62,11 +62,11 @@ module TBFSM();
     #10 TBX = 1;
         TBY = 1;
         
-
+    #800
         
         ////////
         
-    #10 TBX = 0;
+        TBX = 0;
         TBY = 0;
     
     #10 TBX = 0;
