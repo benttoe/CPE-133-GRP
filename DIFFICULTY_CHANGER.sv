@@ -1,12 +1,12 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
+// Company: Cal Poly
+// Engineer: Nick Grant
 // 
 // Create Date: 06/06/2024 12:21:36 PM
 // Design Name: 
 // Module Name: DIFFICULTY_CHANGER
-// Project Name: 
+// Project Name: Precision Button Press
 // Target Devices: 
 // Tool Versions: 
 // Description: 
