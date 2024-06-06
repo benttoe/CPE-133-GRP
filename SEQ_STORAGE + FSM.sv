@@ -4,12 +4,12 @@
 // Engineer: Nick Grant
 // 
 // Create Date: 06/03/2024 01:55:40 PM
-// Module Name: SEQ_STORAGE
+// Module Name: SEQ_STORAGE + FSM
 // Project Name: Precision Button Press
 // Target Devices: 
 // Tool Versions: 
-// Description: 
-// 
+// Description:
+// We combined the sequence storage and the fsm to fix the timing issues caused by keeping them separate.
 // Dependencies: 
 // 
 // Revision:
