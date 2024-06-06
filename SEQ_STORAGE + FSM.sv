@@ -1,15 +1,15 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: Cal Poly CPE 133
-// Engineer: Nick Grant
+// Engineer: Brycen Jermagian
 // 
 // Create Date: 06/03/2024 01:55:40 PM
-// Module Name: SEQ_STORAGE + FSM
+// Module Name: SEQ_STORAGE
 // Project Name: Precision Button Press
 // Target Devices: 
 // Tool Versions: 
-// Description:
-// We combined the sequence storage and the fsm to fix the timing issues caused by keeping them separate.
+// Description: 
+// 
 // Dependencies: 
 // 
 // Revision:
@@ -19,7 +19,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 //declaring in/out
-module SEQ_STORAGE(
+module SEQ_DTR(
     input BTN,
     input [7:0] LEDS,
     input [7:0] SW,
@@ -37,7 +37,7 @@ module SEQ_STORAGE(
       
 
     
-    always_ff @(posedge CLK) begin //Button press only does something on the clock cycle to avoid timing issues
+    always_ff @(posedge CLK) begin //button press only does something on the clock cycle to avoid timing issues
       
         PS <= NS;
         
@@ -51,13 +51,10 @@ module SEQ_STORAGE(
     end   
     
 
-//State Play: Z = 0; 
-        //If: GO == 1, SEQ = LEDS; SEQ2 = SW; Go to state A Else: Stay in PLAY    
-//States A - H:  Z = 0;
-          //If: The bit respective bit of SEQ and SEQ2 match, Go to the next state Else: Go back to PLAY  
-//State FIN: Z = 1; 
-       //Go back to PLAY 
-//Default: PLAY
+//State A: If X == Y, V = 1; Else: V = 0; Go to the next state regardless
+//States B - H: If X == Y && V, V = 1; Else: V = 0; Go to the next state regardless
+//State FINl: Z = V; If: Z = 1, Delay: 800 ns, V = V; Else: V = v; Go back to A
+//Default: A
     
     always_comb begin
         
