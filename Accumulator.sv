@@ -9,7 +9,7 @@
 
 module Accumulator(
     input clk, LD, CLR,
-    input [7:0] D = 1,
+    input [7:0] D = 1, //modified so that D is always 1 (Accumulator will always add 1 to the score)
     output logic [7:0] Q = 0
     );
     
