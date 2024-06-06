@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: Cal Poly
-// Engineer: Nick Grant
+// Engineer: Nick Grant CPE 133
 // 
 // Create Date: 06/06/2024 12:21:36 PM
 // Design Name: 
