@@ -12,14 +12,7 @@ module Accumulator(
     input [7:0] D = 1, //modified so that D is always 1 (Accumulator will always add 1 to the score)
     output logic [7:0] Q = 0
     );
-    
-    always_ff @ (posedge clk)
-    begin
-        if (CLR)
-            Q <= 0;
-        else if (LD)
-            Q <= D + Q;
-         
-    
-    end
+
+    //rest of module...
+
 endmodule
