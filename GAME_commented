@@ -41,6 +41,6 @@ module GAME(
     FSM SEQ_DTR (.CLK(t1), .X(t3), .Y(t5), .Z(t6)); //compares LEDS and SWITCHES sequences, outputs 1 if they match
     Accumulator ACC (.clk(CLK), .LD({7'b0,t6}), .CLR(RST), .Q(t7)); //takes output of FSM to add 1 to accumulator for score, reset clears score
     U_SSEG SSEG (.clk(CLK), .cnt1({{6{1'b0}}, t7}), .ssegs(SEG), .disp_en(AN));  //displays score on the screen
-    assign LED = ~t2;
+    assign LED = ~t2; //0 values = LED turned on
     
 endmodule
