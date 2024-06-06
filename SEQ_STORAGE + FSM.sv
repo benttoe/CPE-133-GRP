@@ -41,12 +41,12 @@ module SEQ_STORAGE(
       
         PS <= NS;
         
-        
+        //Detects falling edge of the button (GO is only 1 if the button is being unpressed)
         if ((BTN != BT) & (BT == 1'b0)) GO <= 1;
         
         else GO <= 0;
         
-        BT <= BTN;
+        BT <= BTN; //sets the variable BT to be the current state of the button to be used for comparison next clock cycle
         
     end   
     
@@ -69,7 +69,7 @@ module SEQ_STORAGE(
             
             Z = 0;
             
-            if (GO) begin NS = A; SEQ = LEDS; SEQ2 = SW; end
+                if (GO) begin NS = A; SEQ = LEDS; SEQ2 = SW; end // stores the current positions of the switches and LEDs in temporary variables
             
             else NS = PLAY;
             
@@ -171,9 +171,8 @@ module SEQ_STORAGE(
             
             FIN:begin
             
-            Z = 1;
-            
-            //#800 
+            Z = 1; // Sequences match
+
             
             NS = PLAY;
             
